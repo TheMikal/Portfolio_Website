@@ -1,0 +1,33 @@
+/* sets border and background for the header */
+.header {
+    border-bottom: 10px solid darkorchid;
+    display: flex;
+    flex: content;
+    background-color: wheat;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* sets the itsMe class to have bold font */
+#itsMe {
+    font-weight: bolder;
+}
+
+/* im not sure what im trying here tbh */
+nav {
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+#aboutMe {
+
+}
+
+#myWork {
+
+}
+
+#contactMe {
+    
+}
