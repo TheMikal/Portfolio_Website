@@ -13,11 +13,12 @@
     font-weight: bolder;
 }
 
-/* im not sure what im trying here tbh */
-nav {
+nav section {
     display: inline-block;
-    width: auto;
-    height: auto;
+    justify-content: flex-end;
+    padding: 5px;
+    border: 2px dashed lightslategray;
+    border-radius: 10px;
 }
 
 #aboutMe {
@@ -29,5 +30,5 @@ nav {
 }
 
 #contactMe {
-    
+
 }
