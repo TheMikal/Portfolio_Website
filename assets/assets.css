@@ -1,3 +1,4 @@
+/* sets background gradient */
 body {
     background: linear-gradient(90deg, #FDFD96, #FFCC99);
 }
@@ -7,18 +8,36 @@ body {
     border-style: ridge;
     display: flex;
     flex: content;
-    background-color: wheat;
+    background-color: rgb(250, 233, 205);
     align-items: center;
     justify-content: space-between;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+aside{
+    padding: 4px;
+    float: right;
+    border: 1px dotted gray;
 }
 
-/* sets the itsMe id to have bold font */
+aside img {
+    max-height: 400px;
+    width: auto;
+    float: right;
+    margin: 0 0 10px 10px;
+}
+
+aside ul {
+    list-style: none;
+}
+
+/* sets the name id to have bold font */
 #name {
     font-weight: bolder;
     font-size: 35px;
     box-shadow: 0 0 5 5;
 }
 
+/* handles the navigation bar styling. border color, border radius, etc. */
 nav section {
     display: inline-block;
     justify-content: flex-end;
@@ -27,20 +46,54 @@ nav section {
     border-radius: 10px;
 }
 
+/* handles the text wrapping and styling for the about me section */
 .aboutMe {
     font-size: 20px;
     flex-wrap: wrap;
     max-width: 100%;
     display: flex;
     word-wrap: break-word;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* sets up the grid and styles it */
 .myWork {
-    font-size: 20px;
+    max-width: 75%;
+    border: 2px solid;
+    border-color:blueviolet;
+    font-size: 30px;
     flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+/* targets the first child   */
+.myWork article:first-child {
+    grid-column: span 2;
+}
+
+.myWork img {
+    max-width: 100%;
+    height: auto;
+}
+
+.myWork article {
+    border: 2px dashed blueviolet;
+}
+/*  */
 .contactMe {
     font-size: 20px;
     flex-wrap: wrap;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* the following sets up media queries to adjust grid layout based on screen size */
+@media screen and (max-width: 768px) { 
+    .myWork {
+        grid-template-columns: 1;
+        grid-template-rows: auto;
+    }
 }
