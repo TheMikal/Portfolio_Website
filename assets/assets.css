@@ -1,6 +1,10 @@
+body {
+    background: linear-gradient(90deg, #FDFD96, #FFCC99);
+}
 /* sets border and background for the header */
 .header {
     border-bottom: 10px solid darkorchid;
+    border-style: ridge;
     display: flex;
     flex: content;
     background-color: wheat;
@@ -8,27 +12,35 @@
     justify-content: space-between;
 }
 
-/* sets the itsMe class to have bold font */
-#itsMe {
+/* sets the itsMe id to have bold font */
+#name {
     font-weight: bolder;
+    font-size: 35px;
+    box-shadow: 0 0 5 5;
 }
 
 nav section {
     display: inline-block;
     justify-content: flex-end;
     padding: 5px;
-    border: 2px dashed lightslategray;
+    border: 2px solid lightslategray;
     border-radius: 10px;
 }
 
-#aboutMe {
-
+.aboutMe {
+    font-size: 20px;
+    flex-wrap: wrap;
+    max-width: 100%;
+    display: flex;
+    word-wrap: break-word;
 }
 
-#myWork {
-
+.myWork {
+    font-size: 20px;
+    flex-wrap: wrap;
 }
 
-#contactMe {
-
+.contactMe {
+    font-size: 20px;
+    flex-wrap: wrap;
 }
