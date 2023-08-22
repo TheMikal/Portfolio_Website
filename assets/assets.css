@@ -47,7 +47,7 @@ nav section {
 }
 
 /* handles the text wrapping and styling for the about me section */
-.aboutMe {
+#aboutMe {
     font-size: 20px;
     flex-wrap: wrap;
     max-width: 100%;
@@ -57,7 +57,7 @@ nav section {
 }
 
 /* sets up the grid and styles it */
-.myWork {
+#myWork {
     max-width: 75%;
     border: 2px solid;
     border-color:blueviolet;
@@ -71,20 +71,20 @@ nav section {
 }
 
 /* targets the first child   */
-.myWork article:first-child {
+#myWork article:first-child {
     grid-column: span 2;
 }
 
-.myWork img {
+#myWork img {
     max-width: 100%;
     height: auto;
 }
 
-.myWork article {
+#myWork article {
     border: 2px dashed blueviolet;
 }
 /*  */
-.contactMe {
+#contactMe {
     font-size: 20px;
     flex-wrap: wrap;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -92,7 +92,7 @@ nav section {
 
 /* the following sets up media queries to adjust grid layout based on screen size */
 @media screen and (max-width: 768px) { 
-    .myWork {
+    #myWork {
         grid-template-columns: 1;
         grid-template-rows: auto;
     }
